@@ -1,3 +1,43 @@
+!pip install --upgrade pip
+!pip install cufflinks
+!pip install plotly
+!pip install matplotlib
+!pip install dash
+!pip install chart-studio
+!pip install mpl_to_plotly
+!pip install dash-bootstrap-components
+
+#Bibliotecas necessárias para as dashboards
+import cufflinks as cf
+from plotly.offline import plot, iplot
+import plotly.offline as py
+import pandas as pd
+import numpy as np
+import plotly.graph_objs as go
+import plotly.io as pio
+import plotly.express as px
+import matplotlib.pyplot as plt
+from dash import Dash, html, dcc
+import chart_studio.dashboard_objs as dashboard
+import matplotlib.pyplot as plt
+import seaborn as sns
+from plotly.subplots import make_subplots
+
+cf.go_offline()
+pio.renderers.default = 'colab'
+
+import chart_studio
+chart_studio.tools.set_credentials_file(username='paotheon', api_key='Asvx48GFjvPNyqwsuOmf')
+
+import chart_studio.plotly as pyo
+
+arquivo = '/content/drive/MyDrive/recife/Dashboard/empresas_ativas_tratadas_DEFINITIVO.csv'
+dt_geral_novo = pd.read_csv(arquivo, header=0)
+
+pio.renderers.default = 'colab'
+
+
+
 import streamlit as st
 import pandas as pd
 
