@@ -1,11 +1,3 @@
-!pip install --upgrade pip
-!pip install cufflinks
-!pip install plotly
-!pip install matplotlib
-!pip install dash
-!pip install chart-studio
-!pip install mpl_to_plotly
-!pip install dash-bootstrap-components
 
 #Bibliotecas necessárias para as dashboards
 import cufflinks as cf
